@@ -1,95 +1,95 @@
 # 🎙️ LERO Voice Range Marker
 
-> 💜 Ein wunderschöner visueller Voice Range Marker für FiveM, der deine Kommunikation zum Leben erweckt!
+> 💜 A beautiful visual voice range marker for FiveM that brings your communication to life!
 
 [![FiveM](https://img.shields.io/badge/FiveM-Ready-blue.svg)](https://fivem.net/)
 [![Lua](https://img.shields.io/badge/Lua-5.4-purple.svg)](https://www.lua.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/Version-1.1.0-orange.svg)](https://github.com/L-E-R-O/fivem_lero_voice_range_marker)
 
-## ✨ Was macht es?
+## ✨ What does it do?
 
-Dieser freundliche kleine Helfer zeigt einen **atemberaubenden violetten Kreis** um deinen Charakter, wenn du deine Sprachweite änderst! Perfekt synchronisiert mit **pma-voice**, siehst du sofort, wie weit deine Stimme reicht – von zartem Flüstern bis zu kraftvollem Schreien! 🎵
+This friendly little helper displays a **stunning purple circle** around your character when you change your voice range! Perfectly synchronized with **pma-voice**, you'll instantly see how far your voice reaches – from gentle whispers to powerful shouts! 🎵
 
 ## 🌟 Features
 
-- 💎 **Wunderschöner visueller Kreis** in deiner Lieblingsfarbe (lila!)
-- 🎯 **6 Reichweiten-Stufen**: Flüstern, Leise, Normal, Laut, Rufen, Schreien
-- 🔔 **Freundliche Benachrichtigungen** mit ox_lib
-- 🔊 **Sanfte Click-Sounds** beim Wechseln
-- 💾 **Intelligente Speicherung** deiner Einstellungen
-- ⚡ **Super performant** – keine FPS-Einbußen!
-- 🎨 **Anpassbare Höhe** je nach Fahrzeug oder zu Fuß
+- 💎 **Beautiful visual circle** in your favorite color (purple!)
+- 🎯 **6 Range Levels**: Whisper, Quiet, Normal, Loud, Shout, Scream
+- 🔔 **Friendly notifications** with ox_lib
+- 🔊 **Smooth click sounds** when switching
+- 💾 **Smart saving** of your preferences
+- ⚡ **Super performant** – no FPS drops!
+- 🎨 **Adaptive height** based on vehicle or on foot
 
 ## 📦 Installation
 
-### Voraussetzungen
-- [pma-voice](https://github.com/AvarianKnight/pma-voice) (essentiell!)
-- [ox_lib](https://github.com/overextended/ox_lib) (für schöne Notifications)
+### Prerequisites
+- [pma-voice](https://github.com/AvarianKnight/pma-voice) (essential!)
+- [ox_lib](https://github.com/overextended/ox_lib) (for beautiful notifications)
 
-### So einfach geht's:
-1. **Download** dieses Repo 💝
-2. **Entpacke** es in deinen `resources` Ordner
-3. **Füge hinzu** zur `server.cfg`:
+### Easy setup:
+1. **Download** this repo 💝
+2. **Extract** it to your `resources` folder
+3. **Add** to your `server.cfg`:
    ```cfg
    ensure fivem_lero_voice_range_marker
    ```
-4. **Starte** deinen Server und genieße! 🎉
+4. **Start** your server and enjoy! 🎉
 
-## 🎮 Verwendung
+## 🎮 Usage
 
-### Automatisch
-Jedes Mal, wenn du deine Sprachweite änderst (Standard: `F2`), erscheint für 3 Sekunden ein schöner Kreis, der dir deine aktuelle Reichweite zeigt! 🪄
+### Automatic
+Every time you change your voice range (default: `F2`), a beautiful circle appears for 3 seconds showing you your current range! 🪄
 
 ### Command
 ```
 /voicetoggle
 ```
-Schaltet Sounds und Benachrichtigungen an/aus – für die stillen Momente! 🤫
+Toggles sounds and notifications on/off – for those quiet moments! 🤫
 
-## 🎨 Die Reichweiten im Detail
+## 🎨 Range Details
 
-| Stufe | Name | Radius | Perfekt für... |
+| Level | Name | Radius | Perfect for... |
 |-------|------|--------|----------------|
-| 1 | 🤫 Flüstern | 0.75m | Geheimnisse |
-| 2 | 🗣️ Leise | 1.5m | Private Gespräche |
-| 3 | 💬 Normal | 3m | Alltägliches |
-| 4 | 📢 Laut | 6m | Wichtige Ansagen |
-| 5 | 📣 Rufen | 12m | Auf Abstand kommunizieren |
-| 6 | 🔊 Schreien | 24m | Notfälle & Warnungen |
+| 1 | 🤫 Whisper | 0.75m | Secrets |
+| 2 | 🗣️ Quiet | 1.5m | Private conversations |
+| 3 | 💬 Normal | 3m | Everyday chat |
+| 4 | 📢 Loud | 6m | Important announcements |
+| 5 | 📣 Shout | 12m | Long-distance communication |
+| 6 | 🔊 Scream | 24m | Emergencies & warnings |
 
-## 🎁 Besondere Features
+## 🎁 Special Features
 
-- **Smart Height Detection** 🚗: Der Kreis passt sich automatisch an, ob du in einem Fahrzeug sitzt oder läufst
-- **Größere Kreise** für Rufen & Schreien – damit du den Unterschied sofort siehst!
-- **Deine Einstellungen werden gespeichert** – beim nächsten Login ist alles wie du es magst! 💖
+- **Smart Height Detection** 🚗: The circle automatically adjusts whether you're in a vehicle or on foot
+- **Larger circles** for Shout & Scream – so you can see the difference instantly!
+- **Your settings are saved** – everything stays just the way you like it on next login! 💖
 
-## 🛠️ Konfiguration
+## 🛠️ Configuration
 
-Alle wichtigen Einstellungen findest du am Anfang der `client.lua`:
+All important settings can be found at the top of `client.lua`:
 
-- **Kreisfarbe**: Standardmäßig lila (`128, 0, 255, 100`) – aber du kannst sie ändern! 🎨
-- **Anzeigezeit**: 3 Sekunden – perfekt, um einen Blick drauf zu werfen
-- **Kreisbreite**: Anpassbar für deine Vorlieben
+- **Circle Color**: Purple by default (`128, 0, 255, 100`) – but you can change it! 🎨
+- **Display Time**: 3 seconds – perfect for a quick glance
+- **Circle Width**: Adjustable to your preferences
 
-## 💝 Support & Danke
+## 💝 Support & Thanks
 
-Gefällt dir das Script? Gib uns einen ⭐ auf GitHub! Das motiviert uns unglaublich! 
+Love this script? Give us a ⭐ on GitHub! It means the world to us! 
 
-Probleme oder Ideen? Öffne einfach ein [Issue](https://github.com/L-E-R-O/fivem_lero_voice_range_marker/issues) – wir helfen gerne! 🤗
+Issues or ideas? Just open an [Issue](https://github.com/L-E-R-O/fivem_lero_voice_range_marker/issues) – we're happy to help! 🤗
 
-## 📜 Lizenz
+## 📜 License
 
-MIT – Nutze es, liebe es, teile es! 💕
+MIT – Use it, love it, share it! 💕
 
 ---
 
 <div align="center">
   
-**Gemacht mit 💜 von LERO**
+**Made with 💜 by LERO**
 
-*Für eine bessere FiveM Community!* ✨
+*For a better FiveM community!* ✨
 
-[⬆ Zurück nach oben](#-lero-voice-range-marker)
+[⬆ Back to top](#-lero-voice-range-marker)
 
 </div>
